@@ -17,7 +17,7 @@
 
 
 # O que é Git e GitHub ?
-  Pela frequência do uso dos dois termos de maneira conjunta, é comum que certa confusão em pessoas que estão tendo seu primeiro contanto com eles, levando a acreditar que ambos termos tratam-se da mesma coisa. Mas, não são! Vou explicar o porquê nos tópicos abaixo. 👇
+  Pela frequência do uso dos dois termos de maneira conjunta, é comum que cause certa confusão em pessoas que estão tendo seu primeiro contanto com eles, levando a acreditar que ambos termos tratam-se da mesma coisa. Mas, não são! Vou explicar o porquê nos tópicos abaixo. 👇
 
 ## Git
   Criado em 2005, por Linus Torvalds e sua equipe, trata-se de um **sistema de versionamento distribuído**, o qual permite que cada linha de código modificada ou nova, seja versionada e salva corretamente, desta maneira podemos transitar facilmente pelas versões mais antigas do nosso código ou realizar novas implementações de maneira segura.
