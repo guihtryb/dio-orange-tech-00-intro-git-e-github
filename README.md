@@ -87,5 +87,13 @@
   - `git push` >> "Empurra" as últimas mudanças do repositório local para o repositório remoto.
   - `git pull` >> "Puxa" as mudanças do repositório remoto para o local.
 # Ciclo de vida dos arquivos no Git
+Ao iniciar um repositório Git cada arquivo tem um status, e um "ciclo de vida".
+  - `Untracked` >> 1º agrupamento ~> São arquivos quais o Git ainda não tem ciência e registros
+  - `Tracked` >> 2º agrupamento ~> É constituido por arquivos que já foram adicionados ao diretório .git;
+    - `Unmodified` >> 1º estágio ~> Arquivos que estão na mesma versão do último commit, resumindo, não foram modificados.
+    - `Modified` >> 2º estágio ~> Arquivos que sofreram alterações e portanto têm um hash diferente ao seu anterior.
+    - `Staged` >> 3º estágio ~> Arquivos que tiveram suas últimas mudanças adicionadas ao diretório .git.
+
+    ![CicloDeVida](./assets/lifecycle.png);
 # Resolvendo conflitos
 
