@@ -14,6 +14,7 @@
   - [SHA](#sha)
   - [Objetos internos do Git](#objetos-internos-do-git)
   - [Chave SSH e Token](#chave-ssh-e-token)
+- [Primeiros comandos com o Git](#primeiros-comandos-com-o-git)
 - [Ciclo de vida dos arquivos no Git](#ciclo-de-vida-dos-arquivos-no-git)
 - [Resolvendo conflitos](#resolvendo-conflitos)
 
@@ -77,6 +78,14 @@
 
   - Token de acesso pessoal: A cada vez que realizarmos um commit ou ao clonar um repositório, o GitHub precisará do Token de acesso pessoal para realizar a operação.
 
+# Primeiros comandos com o Git
+  - `git config` >> Seta as configurações de usuário para uso do git no repositório corrente
+    - `git config --global` >> Flag --global para adicionar as configurações globalmente
+  - `git init` >> Inicia um repositório Git no diretório em questão. | Repo .git
+  - `git add arquivo.txt` >> Adiciona um arquivo e suas mudanças ao repositório Git.
+  - `git commit` >> Adiciona uma mensage para descrever as últimas mudanças realizadas no arquivo em questão.
+  - `git push` >> "Empurra" as últimas mudanças do repositório local para o repositório remoto.
+  - `git pull` >> "Puxa" as mudanças do repositório remoto para o local.
 # Ciclo de vida dos arquivos no Git
 # Resolvendo conflitos
 
