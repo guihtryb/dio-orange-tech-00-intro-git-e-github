@@ -11,7 +11,7 @@
   - [Windows](#windows)
   - [Linux](#linux)
 - [Git "por baixo dos panos"](#git-"por-baixo-dos-panos")
-  - [Fundamentos](#fundamentos)
+  - [SHA](#sha)
   - [Objetos internos do Git](#objetos-internos-do-git)
   - [Chave SSH e Token](#chave-ssh-e-token)
 - [Ciclo de vida dos arquivos no Git](#ciclo-de-vida-dos-arquivos-no-git)
@@ -45,6 +45,7 @@
   - `rmdir diretorio_exemplo /S /Q` >> Deleta um diretório juntamente com todos seus arquivos.
     - "/S" >> Deleta a árvore de arquivos do diretório.
     - "/Q" >> Não pede por confirmação ao deletar a árvore de um diretório.
+
 ## Linux:
   - `ls` >> Traz uma lista de diretórios contidos na pasta em que estamos situados.
   - `cd` >> Caminha até determinado arquivo | cd ~> change directory
@@ -55,13 +56,27 @@
   - `echo hello > hello.txt` >> Insere o conteúdo hello dentro de um novo arquivo "hello.txt".
   - `rm -rf diretorio_exemplo` >> Deleta um diretório juntamente com todos seus arquivos de maneira recursiva e forçada.
 
-
-
-
 # Git "por baixo dos panos"
-## Fundamentos
+
+## SHA
+  - `Secure Hash Algorithm`, trata-se de um conjunto de funções has **criptográficas** projetas pela National Secure Agence dos Estados Unidos. Ele permite que o Git identifique os arquivos de uma maneira única e suas eventuais mudanças.
+    - Gera um conjunto de caractéres identificador de 40 dígito. >> É uma forma curta de representar um arquivo.
+    - `openssl sha1 arquivo.txt` >> Esse comando gera o hash para determinado arquivo.
 ## Objetos internos do Git
+  - `Blobs`
+    - Bloco básico de composição, Os arquivos ficam guardados dentro de objetos chamados "Blobs", que contêm metadados sobre os arquivos, registrando o seu tipo(blob), seu tamanho, "\0", e seu conteúdo.
+  - `Trees`
+    - Armazenam blobs e outras árvores, contêm metadados, guardando o nome dos arquivos presentes em cada blobs que a constitui, "\0", e seu tamanho
+  - `Commits`
+    - Um objeto que aponta para uma árvore, para o último commit realizado antes dele, para o autor, para uma mensagem, e para o seu "timestamp", englobando tudo. Todos objetos possui um sha1 e cada mundança e refletida no sha1 de cada objeto, identificando e deixando muito claro qualquer modificação.
+
 ## Chave SSH e Token
+  Para enviar códigos para o GitHub, alguns processos de segurança são necessários.
+
+  - Chave SSH: Uma maneira segura e encriptada de estabelecer conexão entre duas máquinas.
+
+  - Token de acesso pessoal: A cada vez que realizarmos um commit ou ao clonar um repositório, o GitHub precisará do Token de acesso pessoal para realizar a operação.
+
 # Ciclo de vida dos arquivos no Git
 # Resolvendo conflitos
 
