@@ -7,7 +7,9 @@
 - [O que é Git e GitHub ?](#o-que-é-git-e-github)
   - [Git](#git)
   - [GitHub](#github)
-- [Comandos básicos](#comandos-básicos)
+- [Comandos básicos no terminal](#comandos-básicos-no-terminal)
+  - [Windows](#windows)
+  - [Linux](#linux)
 - [Git "por baixo dos panos"](#git-"por-baixo-dos-panos")
   - [Fundamentos](#fundamentos)
   - [Objetos internos do Git](#objetos-internos-do-git)
@@ -25,11 +27,37 @@
 ## GitHub
   Desenvolvido pela Microsoft, o github é uma plataforma que permite a hospedagem do nosso código em um ambiente de maneira remota, trazendo benefícios como:
   - Armazenamento em nuvem
-  - Trabalho em equipe
-  - Melhorar seu código (por meio de feedback de outras pessoas desenvolvedoras a respeito dele).
+  - Facilitação do trabalho em equipe
+  - Melhorio do seu código (por meio de feedback de outras pessoas desenvolvedoras a respeito dele).
+
+# Comandos básicos no terminal
+  Comandos básicos para trabalhar com o terminal, Linux & Windows:
+
+## Windows:
+  - `dir` >> Traz uma lista de diretórios contidos na pasta em que estamos situados.
+  - `cd` >> Caminha até determinado arquivo | cd ~> "change directory".
+    - `cd ./` >> caminha para um diretório interno.
+    - `cd ../` >> Volta um diretório.
+  - `cls` >> Limpa o terminal | cls -> "clear screen".
+  - `mkdir` >> Cria uma pasta nova | mkdir -> "make directory".
+  - `echo hello > hello.txt` >> Insere o conteúdo hello dentro de um novo arquivo "hello.txt".
+  - `del diretorio_exemplo` >> Deleta todos arquivo dentro de um diretório.
+  - `rmdir diretorio_exemplo /S /Q` >> Deleta um diretório juntamente com todos seus arquivos.
+    - "/S" >> Deleta a árvore de arquivos do diretório.
+    - "/Q" >> Não pede por confirmação ao deletar a árvore de um diretório.
+## Linux:
+  - `ls` >> Traz uma lista de diretórios contidos na pasta em que estamos situados.
+  - `cd` >> Caminha até determinado arquivo | cd ~> change directory
+    - `cd ./` >> Caminha para um diretório interno
+    - `cd ../` >> Volta um diretório
+  - `clear` >> Limpa o terminal.
+  - `mkdir` >> Cria uma pasta nova | mkdir -> "make directory". 
+  - `echo hello > hello.txt` >> Insere o conteúdo hello dentro de um novo arquivo "hello.txt".
+  - `rm -rf diretorio_exemplo` >> Deleta um diretório juntamente com todos seus arquivos de maneira recursiva e forçada.
 
 
-# Comandos básicos
+
+
 # Git "por baixo dos panos"
 ## Fundamentos
 ## Objetos internos do Git
