@@ -95,5 +95,7 @@ Ao iniciar um repositório Git cada arquivo tem um status, e um "ciclo de vida".
     - `Staged` >> 3º estágio ~> Arquivos que tiveram suas últimas mudanças adicionadas ao diretório .git.
 
     ![CicloDeVida](./assets/lifecycle.png);
-# Resolvendo conflitos
 
+# Resolvendo conflitos
+Quando um código, sofre uma alteração na mesma linha, por mais de uma máquina diferente, resulta em um **conflito de versão** no GitHub, caso o código tenha sido "empurrado"(com git push), ou na sua máquina ao ser "puxado"(com git pull) do repositório remoto.
+Em um conflito, o GitHub não vai decidir nada automáticamente, ele vai esperar que o usuário abra o arquivo com o conflito e resolva-o manualmente e então empurre o código com a versão correta mais atualizada.
